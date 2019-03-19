@@ -1,4 +1,4 @@
-from mypackage import recursion,recursion
+from mypackage import recursion,sorting
 
 def sum_array():
     """
