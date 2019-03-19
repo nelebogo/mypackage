@@ -8,7 +8,7 @@ setup(
     description='Sorting and Recursion Package',
     long_description=open('README.md').read(),
     install_requires=['numpy'],
-    url='https://github.com/<nelebogo>/<mypackage>',
-    author='<Nelebogo Kgohlo>',
-    author_email='<tebogokgohlo@gmail.com>'
+    url='https://github.com/nelebogo/mypackage.git',
+    author='Nelebogo Kgohlo',
+    author_email='tebogokgohlo@gmail.com'
 )
