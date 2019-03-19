@@ -15,26 +15,22 @@ def merge_sort(items):
     len_items=len(items)
     if len_items==1:
         return items
-    mid_point=int(len_i/2)
+    mid_point=int(len_items/2)
     list1=merge_sort(items[:mid_point])
     list2=merge_sort(items[mid_point:])
-    return merge(list1,list2)
-
-
-def merge(list1, list2):
-        properlist=[]
-        while len(list1)>0 and len(list2)>0:
-            if list1[0]<list2[0]:
-                properlist.append(list1[0])
-                list1.remove(list1[0])
-            else:
-                properlist.append(list2[0])
-                list2.remove(list2[0])
-        if len(list1)==0:
-             properlist=properlist+list2
+    properlist=[]
+    while len(list1)>0 and len(list2)>0:
+        if list1[0]<list2[0]:
+            properlist.append(list1[0])
+            list1.remove(list1[0])
         else:
-             properlist=properlist+list1
-        return properlist
+            properlist.append(list2[0])
+            list2.remove(list2[0])
+    if len(list1)==0:
+        properlist=properlist+list2
+    else:
+        properlist=properlist+list1
+    return properlist
 
 def quick_sort(items):
     if len(items) <= 1:
